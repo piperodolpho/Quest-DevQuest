@@ -1,0 +1,35 @@
+main {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+    background-color: var(--Violet);
+    height: 100vh;
+}
+
+.principal{
+    display: grid;
+    grid-template-areas:
+        “titulo titulo”
+
+        “desenho descricao”
+
+        “contato contato”;
+
+}
+
+.titulo{
+    grid-area: titulo;
+}
+
+.desenho {
+    grid-area: desenho;
+}
+
+.descricao{
+    grid-area: descricao;
+    display: flex;
+    flex-direction: column;
+}
+
+.principal .contato{
+    grid-area: contato;
+}
